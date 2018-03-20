@@ -1,0 +1,115 @@
+git hub:
+
+3phase
+
+work space - if u cretae file its store in workplace ( developrs develop files its defualt store in work space.
+
+index area - y mve work to index ( when u commit to local repo it will store details ( when it time who is mving at what time and everthing is store )
+locl repos- this file push to centralise repo.
+
+create new git director or folder
+> git init ( for intilation depository)( if no .git folder usong this command ) initilaze
+next use below command( configure user and mail )
+>git config --global user.name "chaitu"
+>git config --global useremail "mailid"
+>git config -- list
+
+commands :
+work space to index area
+--> git add filename
+
+index are to local rep
+--> git commit -m "commit (label")
+
+download git link -> www.git-scm.com/download
+git commands :
+>git status 
+(if any file in red color its in work station
+
+
+
+>git add filename
+(if file shows green color its in index area)
+> git add . ( all fills add to index area)
+> git commit -m " this fil created by chaitu"
+git commit -m "labelname" file name ( only particular file index area to locla repo)
+>git log ( see
+>git log -n 3 ( if many files use this command for see
+> git log --oneline ( its shows single line 
+> git log --author=username(  list of author
+> git show commit id ( to check the commit id files )
+centarl rep.
+>git log --since=y-m-d(show dates logs)
+git log until=y-m-d(shows date upto list
+
+
+1) reste indexarea to work space :
+>git reset head file-name
+2) resert local repo to index area:
+> git reset --soft cid   (cid-commit id we will give before sha code 
+3) local rep to work space :
+> git reset --mixed cid 
+
+>git init --bare --shared  ( it will create centralise repo)
+
+local syst to central repo cmmand
+>git push path of central repo branch name
+ex: git push /c:/doenloads/ceneter/ master
+( all fils are stored in object format in centrol repo)
+
+uses of branches: 
+>git branch ( how many branchs list
+
+if i want create new branch 
+> git branch master-1 (new branch name
+
+how to change branch 
+> git checkout branch name
+
+what ever fils in master(branch) fils same files in master-1 ( new branch)
+
+u can create fils in 3 ways in linux commands
+1>touch name (emety fils create and next edit file in vi editer)
+2> cat > file ( u can and add data and create. ctrl+d(save)
+> cat file ( read the file 
+> cat >> file ( data add)
+3> vi file name (type ( esc+i ) save (esc:wq!)
+
+new brach ( master -1) to branch (master)
+>git merge master-1( new branch )
+
+removie branch:
+> git branch -d branch name
+
+single step : branch create and check out at a time:
+>git checkout -b new branch (master-2)
+
+git hub push step by step:
+>git clone central rep path( https://github.com/pokj/batch-10.git  
+>cd batch-10
+>touch name
+>git add .
+>git commit -m "name"
+>git push
+>git pullu
+
+commands:
+git add . or * or -A
+git commit -m "label" file name
+git log
+git show cid
+git reset --soft cid
+git reset head filename
+git reset --mixed cid
+
+
+
+
+
+
+
+
+
+
+
+
